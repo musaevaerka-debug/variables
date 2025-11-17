@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class FirstWord {
+    public static void main(String[] args) {
+        vasya();
+    }
+    public static void vasya() {
+        Scanner sc = new Scanner(System.in);
+        String words = sc.nextLine();
+        String[] sent = words.split(" "); // разделяет строку на слова
+        if (sent.length > 0) {
+            System.out.println(sent[0]);
+
+        }
+    }
+}
