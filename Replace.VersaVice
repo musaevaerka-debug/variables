@@ -1,0 +1,21 @@
+package org.example;
+public class ReplaceViceVersa {
+    public static void main(String[] args) {
+        replaceAABB();
+    }
+    public static void replaceAABB() {
+        String words = "aabbccAABBCC";
+        String replace = words.replace('a', 'b').replace('A', 'B');
+        replace = replace.replace('b', 'x').replace('B', 'y');
+        replace = replace.replace('x', 'a').replace('y', 'A');
+        System.out.println(replace);
+
+        int count = 0;
+        count += words.length() - words.replace("a", "").length();
+        count += words.length() - words.replace("A", "").length();
+        count += words.length() - words.replace("b", "").length();
+        count += words.length() - words.replace("B", "").length();
+        // Вычитаем новое количество символов из старого и получаем, сколько было 'a'
+        System.out.println(count);
+    }
+}
