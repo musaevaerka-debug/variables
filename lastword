@@ -1,0 +1,15 @@
+package org.example;
+import java.util.Scanner;
+public class LastWord {
+    public static void main(String[] args) {
+        abra();
+    }
+    public static void abra() {
+        Scanner sc = new Scanner(System.in);
+        String words = sc.nextLine();
+        String[] sent = words.split(" "); // разделяет строку на слова
+        if (sent.length > 0) {
+            System.out.println(sent[sent.length - 1]);
+        }
+    }
+}
