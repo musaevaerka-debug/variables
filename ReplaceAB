@@ -1,0 +1,14 @@
+package org.example;
+public class ReplaceAB {
+    public static void main(String[] args) {
+        replace();
+    }
+    public static void replace() {
+        String words = "aabbccabadef";
+        String replace = words.replace('a', 'b');
+        System.out.println(replace);
+        int count = words.length() - words.replace("a", "").length();
+        System.out.println(count);
+
+    }
+}
